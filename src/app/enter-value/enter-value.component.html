@@ -1,0 +1,23 @@
+<main>
+  <form class="value-box" [formGroup]="form">
+    <div class="form">
+      <label for="" [innerHTML]="'x {'"></label>
+      <input type="text" [formControlName]="'min'">
+      <input type="text" [formControlName]="'max'">
+      <label for="" [innerHTML]="'}'"></label>
+    </div>
+    <div class="form">
+      <label for="">dx</label>
+      <input type="text"  [formControlName]="'dx'">
+    </div>
+    <div class="form">
+      <label for="">m</label>
+      <input type="text"  [formControlName]="'m'">
+    </div>
+    </form>
+    <section class="button-box">
+      <button (click)="calculateFormul()">Обчислити</button>
+      <button (click)="resetAll()">Очистити</button>
+    </section>
+
+</main>

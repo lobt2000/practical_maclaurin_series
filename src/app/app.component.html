@@ -1,0 +1,16 @@
+<header>
+  <app-enter-value (formValue)="onGetFormValue($event)" (showGraph)="onGetResultValue($event)"></app-enter-value>
+</header>
+<main>
+  <section *ngIf="!resultForGraphics">
+    <app-table-of-value [calculateValue]="calculateValue"></app-table-of-value>
+  </section>
+  <div class="section">
+    <app-graphics></app-graphics>
+    <app-graphics1></app-graphics1>
+    <app-graphics2></app-graphics2>
+    <app-graphics3></app-graphics3>
+  </div>
+
+
+</main>

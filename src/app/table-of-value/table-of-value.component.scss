@@ -1,0 +1,28 @@
+.table-result {
+  width: 100%;
+  min-height: 10px;
+  // padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 4px 6px 7px 0px gray;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+th, td {
+  border: 1px solid;
+  padding: 15px;
+  }
+
+table {
+  width: 90%;
+  margin: 10px auto;
+}

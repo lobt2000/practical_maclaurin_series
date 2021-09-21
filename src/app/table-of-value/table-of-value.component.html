@@ -1,0 +1,28 @@
+<div class="table-result" *ngIf="calculateValue">
+  <table>
+    <thead>
+      <td>№</td>
+      <td>Х</td>
+      <td>Еталоне Y</td>
+      <td>8 Розрядів Y</td>
+      <td>16 Розрядів Y</td>
+      <td>8 Абсолютна похибка</td>
+      <td>16 Абсолютна похибка</td>
+      <td>8 Відносна похибка</td>
+      <td>16 Відносна похибка</td>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let item of Res;let i=index">
+        <td>{{i+1}}</td>
+        <td>{{x[i]}}</td>
+        <td>{{item}}</td>
+        <td>{{Res8[i]}}</td>
+        <td>{{Res16[i]}}</td>
+        <td>{{Abs8[i]}}</td>
+        <td>{{Abs16[i]}}</td>
+        <td>{{Delta8[i]}}</td>
+        <td>{{Delta16[i]}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
