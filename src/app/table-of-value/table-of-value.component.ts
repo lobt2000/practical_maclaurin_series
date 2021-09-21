@@ -57,8 +57,8 @@ export class TableOfValueComponent implements OnInit, OnChanges {
   }
 
   Function(x): number {
-    return 1 - (+this.calculateValue.m / this.rFact(1)) * x + (+this.calculateValue.m / this.rFact(2)) * Math.pow(x, 2) - (+this.calculateValue.m / this.rFact(3)) * Math.pow(x, 3) + (+this.calculateValue.m / this.rFact(4)) * Math.pow(x, 4) -
-      (+this.calculateValue.m / this.rFact(5)) * Math.pow(x, 5);
+    return 1 - (+this.calculateValue.m / this.rFact(1)) * x + ((+this.calculateValue.m * (+this.calculateValue.m - 1)) / this.rFact(2)) * Math.pow(x, 2) - ((+this.calculateValue.m * (+this.calculateValue.m - 1) * (+this.calculateValue.m - 2)) / this.rFact(3)) * Math.pow(x, 3) + ((+this.calculateValue.m * (+this.calculateValue.m - 1) * (+this.calculateValue.m - 2) * (+this.calculateValue.m - 3)) / this.rFact(4)) * Math.pow(x, 4) -
+      ((+this.calculateValue.m * (+this.calculateValue.m - 1) * (+this.calculateValue.m - 2) * (+this.calculateValue.m - 3) * (+this.calculateValue.m - 4)) / this.rFact(5)) * Math.pow(x, 5);
   }
 
   rFact(num) {
